@@ -1,0 +1,4 @@
+<div *ngFor="let layer of layers">
+  <mat-checkbox #checkbox="matCheckbox" (click)="somethingClick(checkbox, layer)">
+    {{ layer.nameOfLayer }}</mat-checkbox>
+</div>
