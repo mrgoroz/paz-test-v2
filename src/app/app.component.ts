@@ -17,7 +17,7 @@ export class AppComponent {
 
   changeMap(layer: layer) {
     if (layer.selected) {
-      this.layersSelected.push(layer.ValOfLayer);
+      this.layersSelected = [...this.layersSelected, layer.ValOfLayer];
     } else {
       this.layersSelected = this.layersSelected.filter(l => { return layer.ValOfLayer !== l }
       );
